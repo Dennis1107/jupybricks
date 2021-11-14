@@ -1,18 +1,22 @@
 import nbconvert
 import json
-#from src import help_functions
+
+# from src import help_functions
 import os
 
-#----siblings import from help functions does not work with typer
+# ----siblings import from help functions does not work with typer
 def check_for_ending(filename: str, ending: str):
     if not filename.endswith(ending):
         raise ValueError(f"{filename} not valid. Should be a file with ending {ending}")
     return
 
+
 def remove_temp_file(filename: str = "temp_file348234283o23478234ip.py"):
     os.remove(filename)
     return
-#-----------------------------------
+
+
+# -----------------------------------
 
 
 def jupyterfile_tolist(
@@ -90,11 +94,10 @@ def convert_jupyter_to_databricks(
                 f"Transforming jupyter file to python file did not work: {e}"
             )
 
-        #write to Python file
+        # write to Python file
         try:
             write_topython(lines, files[file])
         except Exception as e:
             raise ValueError(f"Saving to python file did not work: {e}")
 
     return True
-
