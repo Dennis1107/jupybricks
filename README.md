@@ -79,6 +79,7 @@ Planned next steps:
 - [ ] adding mkdocs documentation
 - [ ] testing on different OS
 - [ ] heavy testing on different kind of databricks formats
+- [ ] Github Actions & pre commit hooks
 
 **Developers:**
 
