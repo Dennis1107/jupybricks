@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "jupybricks"
+version = "0.1.0"
+description = ""
+authors = ["dennis hartel"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.scripts]
+jupybricks = "jupybricks.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typer = "^0.4.0"
+nbconvert = "^6.3.0"
+jupytext = "^1.13.1"
+jupyter = "^1.0.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

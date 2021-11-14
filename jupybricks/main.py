@@ -1,5 +1,5 @@
 import typer
-from src import function_databricks_to_jupyter, function_jupyter_to_databricks
+from . import function_databricks_to_jupyter, function_jupyter_to_databricks
 
 app = typer.Typer()
 
