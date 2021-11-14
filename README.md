@@ -25,7 +25,7 @@ databricks saves python notebooks in a specific format as `.py files`. Usually t
 
  
 
-# Prerequisites 
+# Prerequisites & Installation
 
 Before you begin, ensure you have met the following requirements:
 
