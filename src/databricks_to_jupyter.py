@@ -6,6 +6,7 @@ f = open(
     "src/convert_list.json",
 )
 files = json.load(f)
+print(files)
 
 skip_lines = ["# Databricks notebook source\n", "\n"]
 
