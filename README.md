@@ -1,3 +1,5 @@
+:warning: PACKAGE IN DEVELOPMENT. No stable version yet.
+
 <img src="docs/assets/logo.PNG" width=70% height=70%>
  
 
@@ -26,35 +28,39 @@ databricks saves python notebooks in a specific format as `.py files`. Usually t
  
 
 # Prerequisites & Installation
+:warning: PACKAGE IN DEVELOPMENT. No stable version yet.
 
-Before you begin, ensure you have met the following requirements:
+```
+pip install dist/jupybricks-0.1.0-py3-none-any.whl --force-reinstall
+```
 
-<!--- These are just example requirements. Add, duplicate or remove as required --->
-
-* You have installed the latest version of `<coding_language/dependency/requirement_1>`
-
-* You have read `<guide/link/documentation_related_to_project>`.
-
+Tested only on windows with anaconda and python > 3.8
  
 
 # Using `Jupybricks` 
 
-Jupybricks can be used via the command line:
+Jupybricks is a command line tool can be used. More information with:
+```
+jupybricks --help
+```
 
 ## For single file conversion:
+
+Transforming databricks .py file to jupyter .ipynb:
 ```
-python manage.py databricks-to-jupyter --input-filename <pythonfile.py> --output-filename <jupyterfile.ipynb>
+jupybricks databricks-to-jupyter --input-filename <example_files/databricks_example.py> --output-filename <example_files/jupyter_example.ipynb>
 ```
+Transforming jupyter .ipynb file to databricks .py file
 ```
-python manage.py jupyter-to-databricks --input-filename <jupyterfile.ipynb> --output-filename <pythonfile.py>
+python manage.py jupyter-to-databricks --input-filename <example_files/databricks_example.py> --output-filename <example_files/jupyter_example.ipynb>
 ```
 
 ## For multiple files:
-:warning: it is necessary to have a file named convert_list.json in your root folder. Jupybricks uses this file in order to know which files are used for mapping .py files with the corresponding .ipynb files
+:warning: it is necessary to have a file named convert_list.json in your root folder from where you call jupybricks. Jupybricks uses this file in order to know which files are used for mapping .py files with the corresponding .ipynb files.
 As an example. 
 ```
 {
-    "jupyter_example.ipynb" : "databricks_example.py"    
+    "example_files/jupyter_example.ipynb" : "example_files/databricks_example.py"    
 }
 ```
 
@@ -69,5 +75,5 @@ python manage.py jupyter-to-databricks
 
 **Developers:**
 
-* [Dennis Hartel](https://github.com/Dennis1107) 💻
+[Dennis Hartel](https://github.com/Dennis1107) 💻
  
