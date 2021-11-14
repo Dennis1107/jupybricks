@@ -28,7 +28,7 @@ databricks saves python notebooks in a specific format as `.py files`. Usually t
  
 
 # Prerequisites & Installation
-:warning: PACKAGE IN DEVELOPMENT. No stable version yet.
+:warning: PACKAGE IN DEVELOPMENT. No stable version yet. See next steps at the bottom.
 
 ```
 pip install dist/jupybricks-0.1.0-py3-none-any.whl --force-reinstall
@@ -72,6 +72,13 @@ python manage.py databricks-to-jupyter
 python manage.py jupyter-to-databricks
 ```
 
+# Next Steps
+Feel free to reach out to give advice or feature requests.
+Planned next steps:
+- [ ] adding unit tests
+- [ ] adding mkdocs documentation
+- [ ] testing on different OS
+- [ ] heavy testing on different kind of databricks formats
 
 **Developers:**
 
