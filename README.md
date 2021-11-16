@@ -52,7 +52,7 @@ jupybricks databricks-to-jupyter --input-filename <example_files/databricks_exam
 ```
 Transforming jupyter .ipynb file to databricks .py file
 ```
-jupybricks jupyter-to-databricks --input-filename <example_files/databricks_example.py> --output-filename <example_files/jupyter_example.ipynb>
+jupybricks jupyter-to-databricks --input-filename <example_files/jupyter_example.ipynb> --output-filename <example_files/databricks_example.py>
 ```
 
 ## For multiple files:
@@ -66,10 +66,10 @@ As an example.
 
 If you have the convert_list.json properly set up then you can run the cli commands without paramets:
 ```
-python manage.py databricks-to-jupyter
+jupybricks databricks-to-jupyter
 ```
 ```
-python manage.py jupyter-to-databricks
+jupybricks jupyter-to-databricks
 ```
 
 # Next Steps
