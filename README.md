@@ -52,7 +52,7 @@ jupybricks databricks-to-jupyter --input-filename <example_files/databricks_exam
 ```
 Transforming jupyter .ipynb file to databricks .py file
 ```
-python manage.py jupyter-to-databricks --input-filename <example_files/databricks_example.py> --output-filename <example_files/jupyter_example.ipynb>
+jupybricks jupyter-to-databricks --input-filename <example_files/databricks_example.py> --output-filename <example_files/jupyter_example.ipynb>
 ```
 
 ## For multiple files:
