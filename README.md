@@ -80,6 +80,7 @@ Planned next steps:
 - [ ] testing on different OS
 - [ ] heavy testing on different kind of databricks formats
 - [ ] Github Actions & pre commit hooks
+- [ ] installable version over pip
 
 **Developers:**
 
