@@ -49,7 +49,7 @@ def processing_lines(
     filtered_lines = [line for line in lines if line not in skip_lines]
     # replace the databricks command for new cell with line break which is for jupyter
     processed_lines = [
-        "\n" if line == "# COMMAND ----------\n" else line for line in filtered_lines
+        "#%% \n" if line == "# COMMAND ----------\n" else line for line in filtered_lines
     ]
     if processed_lines[0] == "\n":
         processed_lines.pop(0)
