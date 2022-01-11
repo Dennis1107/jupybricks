@@ -65,14 +65,14 @@ def jupyterfile_tolist(
 def write_topython(
     lines: list,
     output_filename: str,
-    skip_lines: list = ["#!/usr/bin/env python\n", "# coding: utf-8\n", "\n"],
+    skip_lines: list = ["#!/usr/bin/env python\n", "# coding: utf-8\n"],
 ):
     """Writes a list of code lines to a file by consideration of databricks logic.
 
     Args:
         lines (list): contains lines of code
         output_filename (str): name of output python file
-        skip_lines (list, optional): Defaults to ["#!/usr/bin/env python\n", "# coding: utf-8\n", "\n"].
+        skip_lines (list, optional): Defaults to ["#!/usr/bin/env python\n", "# coding: utf-8\n"].
     """
     # open
     with open(output_filename, "w", encoding="utf8") as f:

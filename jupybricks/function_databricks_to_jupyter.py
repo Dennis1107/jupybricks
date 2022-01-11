@@ -40,7 +40,7 @@ def processing_lines(
 
     Args:
         lines (list): contains each line of code
-        skip_lines (list, optional): Lines to be skipped. Defaults to ["# Databricks notebook source\n", "\n"].
+        skip_lines (list, optional): Lines to be skipped. Defaults to ["# Databricks notebook source\n"].
 
     Returns:
         [list]: logic processed lines
