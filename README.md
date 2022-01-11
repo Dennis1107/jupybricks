@@ -31,7 +31,7 @@ databricks saves python notebooks in a specific format as `.py files`. Usually t
 :warning: PACKAGE IN DEVELOPMENT. No stable version yet. See next steps at the bottom.
 
 ```
-pip install dist/jupybricks-0.1.0-py3-none-any.whl --force-reinstall
+pip install dist/jupybricks-0.2.0-py3-none-any.whl --force-reinstall
 ```
 
 Tested only on windows with anaconda and python > 3.8
