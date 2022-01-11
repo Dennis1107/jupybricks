@@ -34,7 +34,7 @@ def remove_temp_file(filename: str = "temp_file348234283o23478234ip.py"):
 
 
 def processing_lines(
-    lines: list, skip_lines: list = ["# Databricks notebook source\n", "\n"]
+    lines: list, skip_lines: list = ["# Databricks notebook source\n"]
 ):
     """Apply logic to transform databricks specific lines to jupyter lines.
 
@@ -49,7 +49,7 @@ def processing_lines(
     filtered_lines = [line for line in lines if line not in skip_lines]
     # replace the databricks command for new cell with line break which is for jupyter
     processed_lines = [
-        "#%% \n" if line == "# COMMAND ----------\n" else line for line in filtered_lines
+        "#%%" if line == "# COMMAND ----------\n" else line for line in filtered_lines
     ]
     if processed_lines[0] == "\n":
         processed_lines.pop(0)

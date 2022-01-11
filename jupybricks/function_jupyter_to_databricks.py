@@ -79,15 +79,17 @@ def write_topython(
         # databricks needs to have the header at the top
         f.write("# Databricks notebook source\n")
 
-        for line in lines:
-            # Replace in future with better regex:
+        for index, line in enumerate(lines, start=0):
+            #Remove unwanted empty spaces
+            if (index - 1 >= 0 ):
+                if (line == "\n") & ("# In[" in lines[index - 1]):
+                    continue
+            if (index + 1 < len(lines)):
+                if (line == "\n") & ("# In[" in lines[index + 1]):
+                    continue
+
             if "# In[" in line:
-                f.write("\n")
                 f.write("# COMMAND ----------\n")
-                f.write("\n")
-            elif "# MAGIC %md" in line:
-                f.write("# COMMAND ----------\n")
-                f.write(line)
             elif line in skip_lines:
                 pass
             else:
